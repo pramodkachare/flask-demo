@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio ML Demo</title>
+</head>
+<body>
+  <h1>🎤 Audio Recording + ML Demo</h1>
+  <button id="record">Start Recording</button>
+  <button id="stop">Stop</button>
+  <p id="status"></p>
+  <audio id="playback" controls></audio>
+  <form id="uploadForm">
+    <input type="submit" value="Send to Model">
+  </form>
+
+  <script src="{{ url_for('static', filename='recorder.js') }}"></script>
+</body>
+</html>
